@@ -42,7 +42,7 @@ class Type1 (RTCM2_Message):
                     RRC*=0.32
 
                 IOD=wb.extract_rtcm_data_and_move(data,8)
-                finished=wb.word()==(length+2)
+                finished=wb.word()>=(length+2)
 #                print "Word: " +str(wb.word())
 
                 self.SV_Details.append({'SV': SV_ID,'UDRE': UDRE, 'IOD':IOD,'PRC':PRC, 'RRC':RRC, 'Scale_Factor': Scale_Factor})
