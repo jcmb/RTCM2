@@ -17,6 +17,7 @@ import RTCM2_Type19
 import RTCM2_Type22
 import RTCM2_Type23
 import RTCM2_Type24
+import RTCM2_Type27
 import RTCM2_Type31
 import RTCM2_Type41
 
@@ -165,6 +166,7 @@ class RTCM2:
         self.Handler[22]=RTCM2_Type22.Type22()
         self.Handler[23]=RTCM2_Type23.Type23()
         self.Handler[24]=RTCM2_Type24.Type24()
+        self.Handler[27]=RTCM2_Type27.Type27()
         self.Handler[31]=RTCM2_Type31.Type31()
         self.Handler[41]=RTCM2_Type41.Type41()
 
